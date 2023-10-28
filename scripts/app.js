@@ -1,8 +1,9 @@
-//variables
+// ADD THESE CLOSER TO WHERE THEY ARE USED
 var quiz = document.getElementById("quiz-container");
 var btn = document.getElementById("btn");
 var results = document.getElementById("result-container");
 var result = document.getElementById("result");
+results.style.display = "none";
 var questionState = 0; //Keeps track of users place in quiz
 var active = true; //True until last question is answered
 var userScore = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
@@ -33,6 +34,7 @@ var answers = [
 ];
 
 // THESE ARE ONLY PLACEHOLDERS UNTIL WE GET THE ACTUAL ANSWERS
+// ADD 4 MORE VALUES TO EACH ARRAY TO MATCH NUMBER OF ALBUMS
 var answerValues = [
   //question 1 answer values
   [

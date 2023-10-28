@@ -3,20 +3,48 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/x-icon" href="/public/kroeger13.jpg" />
     <title>Nickelback Personality Quiz</title>
   </head>
   <body>
+    <header>
+      <h1>Nickelback Personality Quiz</h1>
+    </header>
+
+    <div id="nb-container">
+      <div id="nb">
+      <audio id="audio">
+        <source  src="public/nickelback.mp3"></source>
+      </audio>
+    </div>
+    </div>
+
     <div id="quiz-container">
-      <h1 id="question-text">Which Nickelback album are you?</h1>
-      <div id="questions"></div>
+      <div id="questions">Which Nickelback album are you?</div>
       <ul id="answers"></ul>
       <button id="btn" class="btn">Start</button>
     </div>
+    
+    
     <div id="result-container">
       <div id="result"></div>
     </div>
     <div id="error"></div>
-    <script src="script.js"></script>
+
+    
+
+    <script src="scripts/audio.js"></script>
+    <script src="scripts/app.js"></script>
+
+    <footer>
+      <h3>
+        © 2023
+        <a href="https://alecnazzy.com/" target="_blank">alecnazzy.com</a>
+      </h3>
+    </footer>
+    
+    
   </body>
 </html>
