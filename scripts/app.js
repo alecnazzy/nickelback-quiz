@@ -199,62 +199,62 @@ function displayResults(personality) {
   switch (personality) {
     case 0:
       title.innerText = "You are Curb!";
-      cover.style.backgroundImage = "url('public/Curb-cover.jpg')";
+      cover.style.backgroundImage = "url('images/Curb-cover.jpg')";
       description.innerText =
         "Curb is the debut album by Nickelback. You're probably old and still think grunge is cool.";
       break;
     case 1:
       title.innerText = "You are The State!";
-      cover.style.backgroundImage = "url('public/thestate-cover.jpg')";
+      cover.style.backgroundImage = "url('images/thestate-cover.jpg')";
       description.innerText =
         "The State is the second studio album by Nickelback. You're a little rough around the edges.";
       break;
     case 2:
       title.innerText = "You are Silver Side Up!";
-      cover.style.backgroundImage = "url('public/silversideup-cover.jpg')";
+      cover.style.backgroundImage = "url('images/silversideup-cover.jpg')";
       description.innerText =
         "Silver Side Up is the third studio album by Nickelback. This album was released on September 11th, 2001...luck is not on your side.";
       break;
     case 3:
       title.innerText = "You are The Long Road!";
-      cover.style.backgroundImage = "url('public/thelongroad-cover.jpg')";
+      cover.style.backgroundImage = "url('images/thelongroad-cover.jpg')";
       description.innerText =
         "The Long Road is the fourth studio album by Nickelback. You're probably the middle child.";
       break;
     case 4:
       title.innerText = "You are All The Right Reasons!";
       cover.style.backgroundImage =
-        "url('public/AllTheRightReasons-cover.jpg')";
+        "url('images/AllTheRightReasons-cover.jpg')";
       description.innerText =
         "All The Right Reasons is the fifth studio album by Nickelback. You are either very sentimental or an internet troll.";
       break;
     case 5:
       title.innerText = "You are Dark Horse!";
-      cover.style.backgroundImage = "url('public/darkhorse-cover.jpg')";
+      cover.style.backgroundImage = "url('images/darkhorse-cover.jpg')";
       description.innerText =
         "Dark Horse is the sixth studio album by Nickelback. You were probably the kid that would wear Tapout clothes to school.";
       break;
     case 6:
       title.innerText = "You are Here and Now!";
-      cover.style.backgroundImage = "url('public/hereandnow-cover.jpg')";
+      cover.style.backgroundImage = "url('images/hereandnow-cover.jpg')";
       description.innerText =
         "Here and Now is the seventh studio album by Nickelback. This album got beat on the charts by a Michael Buble christmas album. You're festive!";
       break;
     case 7:
       title.innerText = "You are No Fixed Address!";
-      cover.style.backgroundImage = "url('public/nofixedaddress-cover.jpg')";
+      cover.style.backgroundImage = "url('images/nofixedaddress-cover.jpg')";
       description.innerText =
         "No Fixed Address is the eighth studio album by Nickelback. You have awful taste!";
       break;
     case 8:
       title.innerText = "You are Feed The Machine!";
-      cover.style.backgroundImage = "url('public/feedthemachine-cover.jpg')";
+      cover.style.backgroundImage = "url('images/feedthemachine-cover.jpg')";
       description.innerText =
         "Feed The Machine is the ninth studio album by Nickelback. Skynet is that you?.";
       break;
     case 9:
       title.innerText = "You are Get Rollin'!";
-      cover.style.backgroundImage = "url('public/getrollin-cover.jpg')";
+      cover.style.backgroundImage = "url('images/getrollin-cover.jpg')";
       description.innerText =
         "Get Rollin' is the tenth studio album by Nickelback. You're a Nickelback 10, which means you're a 6 in real life.";
       break;
