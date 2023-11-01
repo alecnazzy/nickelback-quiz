@@ -6,9 +6,6 @@ body {
   background-color: whitesmoke;
   color: black;
   margin-top: 50px;
-
-  /* background-image: url("/public/slow.gif");
-  background-size: cover; */
 }
 
 header {
@@ -19,13 +16,13 @@ header {
   top: 0px;
   position: fixed;
   width: 100%;
-  background: rgba(0, 0, 0);
-  background-color: rgb(5, 207, 157);
-  color: rgb(178, 249, 120);
-  color: aliceblue;
+  background-color: rgb(31, 35, 34);
+  color: #e49c35;
   font-family: "Courier New", Courier, monospace;
   font-size: 12px;
 }
+
+/* QUIZ */
 
 #quiz-container {
   display: flex;
@@ -33,17 +30,16 @@ header {
   align-items: center;
   justify-content: center;
   text-align: center;
-  background-color: rgb(5, 207, 157);
-  color: black;
+  background-color: rgb(31, 35, 34);
+  color: whitesmoke;
   height: 350px;
   width: 400px;
   padding: 50px;
   border-radius: 32px;
-
   z-index: 1;
   top: 50%;
   left: 50%;
-  margin: -100px 0 -100px 0;
+  margin: -145px 0 -100px 0;
 }
 
 #question-text {
@@ -56,108 +52,87 @@ header {
 }
 #answers {
   font-family: "Courier New", Courier, monospace;
-  font-size: 20px;
+  font-size: 17px;
   list-style-type: none;
+  color: white;
+  text-align: left;
 }
 
 #btn {
-  background-color: rgb(136, 135, 135);
+  background-color: whitesmoke;
   border: none;
-  color: white;
+  color: rgb(31, 35, 34);
   box-shadow: none;
   text-decoration: none;
   border-radius: 8px;
   padding: 8px 16px;
   font-size: 16px;
-  font-family: "Courier New", Courier, monospace;
+  font-family: monospace;
   cursor: pointer;
 }
 #btn:hover {
   background-color: rgb(174, 174, 174);
 }
 
-/* #nb-container {
-  overflow: hidden;
-  position: relative;
-} */
-
-#nb {
-  background-image: url("/public/nb-transparent.png");
-  background-size: cover;
-  width: 300px;
-  height: 300px;
-  position: relative;
-  bottom: -120px;
-  bottom: -30px;
-}
-#nb:hover {
-  background-image: url("/public/nb-transparent.png");
-  background-size: cover;
-  animation: up 0.5s ease-in 1;
-  animation-fill-mode: forwards;
-}
-
-@keyframes up {
-  0% {
-    transform: translateY(0px);
-  }
-  25% {
-    transform: translateY(-30px);
-  }
-  50% {
-    transform: translateY(-60px);
-  }
-  100% {
-    transform: translateY(-90px);
-  }
-}
-
-/* Result screen */
-
-/* #result-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  background: rgba(0, 0, 0, 0.3);
-  height: 500px;
-  width: 400px;
-  padding: 50px;
-  border-radius: 32px;
-}
-#result {
-  color: black;
-  font-family: monospace;
-  font-size: 20px;
-} */
+/* RESULTS */
 
 #result-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  align-content: center;
   text-align: center;
-  background-color: rgb(5, 207, 157);
-  color: black;
+  background-color: rgb(31, 35, 34);
+  color: whitesmoke;
   height: 350px;
   width: 400px;
   padding: 50px;
-  margin-top: 30px;
   border-radius: 32px;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  margin: -145px 0 -100px 0;
 }
+#result {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#result-title {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 35px;
+  font-weight: bolder;
+  margin-bottom: 10px;
+}
+#result-cover {
+  width: 150px;
+  height: 150px;
+  background-size: cover;
+  box-shadow: #6d6d6d 0px 0px 50px 0px;
+}
+#result-description {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 20px;
+  margin-top: 22px;
+}
+
 #error {
   display: none;
 }
+
+/* FOOTER */
 
 footer {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  bottom: 20px;
   position: fixed;
   width: 100%;
-  background-color: rgb(5, 207, 157);
+  bottom: 0px;
+  background-color: rgb(31, 35, 34);
   color: white;
   font-family: "Courier New", Courier, monospace;
   font-size: 11px;
@@ -167,5 +142,98 @@ footer a {
   text-decoration: none;
 }
 footer a:hover {
-  color: rgb(158, 253, 134);
+  color: #e49c35;
+}
+
+#gh-foot-icon img {
+  width: 18px;
+  height: 18px;
+  margin-left: 10px;
+}
+
+/* KROEGER FLOATING HEAD */
+
+#kroeger {
+  background-image: url("/public/Kroeger.png");
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+  position: relative;
+  bottom: -10px;
+  animation: updown 10s ease-in-out infinite;
+}
+#kroeger:hover {
+  animation: up 0.4s ease-in 1;
+  animation-fill-mode: forwards;
+}
+
+/* ANIMATION */
+
+@keyframes up {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(-140px);
+  }
+}
+
+@keyframes updown {
+  0% {
+    transform: translateY(100px);
+  }
+  50% {
+    transform: translateY(-40px);
+  }
+  100% {
+    transform: translateY(100px);
+  }
+}
+
+/* MOBILE */
+
+@media screen and (max-width: 600px) {
+  body {
+    background-color: rgb(31, 35, 34);
+    padding: 10px;
+  }
+  #quiz-container {
+    height: 100%;
+    width: 100%;
+    margin-top: 150px;
+  }
+  #result-container {
+    height: 100%;
+    width: 100%;
+    margin-top: 150px;
+  }
+  #kroeger {
+    display: none;
+  }
+  #result-cover {
+    width: 100px;
+    height: 100px;
+  }
+  #result-title {
+    font-size: 25px;
+  }
+  #result-description {
+    font-size: 15px;
+  }
+  #btn {
+    font-size: 12px;
+  }
+  #questions {
+    font-size: 20px;
+  }
+  #answers {
+    font-size: 15px;
+  }
+  footer {
+    font-size: 10px;
+  }
+  #gh-foot-icon img {
+    width: 15px;
+    height: 15px;
+  }
 }

@@ -1,4 +1,9 @@
 var audio = $("#audio")[0];
-$("#nb").mouseenter(function () {
+$("#kroeger").mouseenter(function () {
   audio.play();
+});
+
+$("#kroeger").mouseleave(function () {
+  audio.pause();
+  audio.currentTime = 0;
 });

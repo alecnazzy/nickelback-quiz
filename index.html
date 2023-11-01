@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link rel="stylesheet" href="styles.css" />
-    <link rel="icon" type="image/x-icon" href="/public/kroeger13.jpg" />
+    <link rel="icon" type="image/x-icon" href="/public/Kroeger.png" />
     <title>Nickelback Personality Quiz</title>
   </head>
   <body>
@@ -13,8 +13,8 @@
       <h1>Nickelback Personality Quiz</h1>
     </header>
 
-    <div id="nb-container">
-      <div id="nb">
+    <div id="kroeger-container">
+      <div id="kroeger">
       <audio id="audio">
         <source  src="public/nickelback.mp3"></source>
       </audio>
@@ -29,11 +29,13 @@
     
     
     <div id="result-container">
-      <div id="result"></div>
+      <div id="result">
+        <div id="result-title"></div>
+        <div id="result-cover"></div>
+        <div id="result-description"></div>
+      </div>
     </div>
-    <div id="error"></div>
-
-    
+    <div id="error">Error</div>
 
     <script src="scripts/audio.js"></script>
     <script src="scripts/app.js"></script>
@@ -41,8 +43,11 @@
     <footer>
       <h3>
         © 2023
-        <a href="https://alecnazzy.com/" target="_blank">alecnazzy.com</a>
+        <a href="https://alecnazzy.com/" target="_blank">alecnazzy.com</a> 
       </h3>
+      <a href="https://github.com/alecnazzy/nickelback-quiz" target="_blank" id="gh-foot-icon">
+        <img src="public/icons8-github-30.png" alt="github" />
+      </a>
     </footer>
     
     
