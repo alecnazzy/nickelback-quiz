@@ -5,7 +5,6 @@ body {
   justify-content: center;
   background-color: whitesmoke;
   color: black;
-  margin-top: 50px;
 }
 
 header {
@@ -131,7 +130,7 @@ footer {
   justify-content: center;
   position: fixed;
   width: 100%;
-  bottom: 20px;
+  bottom: 0px;
   background-color: rgb(31, 35, 34);
   color: white;
   font-family: "Courier New", Courier, monospace;
